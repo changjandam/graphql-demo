@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "compile": "tsc",
-    "start": "npm run compile && node .dist/index.js"
+    "start": "npm run compile && node ./dist/index.js",
+    "dev": "concurrently \"tsc -w\" \"npm start\"",
+    "codegen": "graphql-codegen --config codegen.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +18,11 @@
     "graphql-tag": "^2.12.6"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "5.0.2",
+    "@graphql-codegen/typescript": "4.0.9",
+    "@graphql-codegen/typescript-resolvers": "4.2.1",
     "@types/node": "^22.3.0",
+    "concurrently": "^8.2.2",
     "typescript": "^5.5.4"
   }
 }
