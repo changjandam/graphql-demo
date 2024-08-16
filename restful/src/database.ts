@@ -61,8 +61,8 @@ export function getVehicles() {
   return db.query('SELECT * FROM vehicles').all();
 }
 
-export function getVehicleById(id: number) {
-  return db.query('SELECT * FROM vehicles WHERE id = ?').get(id);
+export function getVehicleByUserId(userId: number) {
+  return db.query('SELECT * FROM vehicles WHERE user_id = ?').all(userId);
 }
 
 export function createVehicle(type: string, model: string, userId: number) {

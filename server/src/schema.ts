@@ -2,7 +2,7 @@ import { gql } from 'graphql-tag';
 
 const typeDefs = gql`
   type User {
-    id: ID!
+    id: Int!
     name: String!
     vehicles: [Vehicle]!
   }
@@ -13,7 +13,7 @@ const typeDefs = gql`
   }
 
   type Vehicle {
-    id: ID!
+    id: Int!
     type: VehicleType!
     model: String!
     user_id: Int!
@@ -21,7 +21,7 @@ const typeDefs = gql`
 
   type Query {
     users: [User!]!
-    user(id: ID!): User
+    user(id: Int!): User
   }
 
   type Mutation {

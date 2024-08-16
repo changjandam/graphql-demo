@@ -14,15 +14,15 @@ new Elysia()
   .get('/users/:id', ({ params: { id } }) => {
     return db.getUserById(Number(id));
   })
+  .get('/users/:id/vehicles', ({ params: { id } }) => {
+    return db.getVehicleByUserId(Number(id));
+  })
   .post('/users', (req) => {
     const user = UserSchema.parse(req.body);
     return db.createUser(user.name);
   })
   .get('/vehicles', () => {
     return db.getVehicles();
-  })
-  .get('/vehicles/:id', ({ params: { id } }) => {
-    return db.getVehicleById(Number(id));
   })
   .post('/vehicles', (req) => {
     const vehicle = VehicleSchema.parse(req.body);
