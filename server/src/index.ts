@@ -22,4 +22,4 @@ const { url } = await startStandaloneServer(server, {
   },
 });
 
-console.log(`Server running at http://localhost:${url}`);
+console.log(`Server running at ${url}`);
