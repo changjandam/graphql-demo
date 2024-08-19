@@ -52,4 +52,4 @@ cd client
 npm install && npm run dev
 ```
 
-Client 會在 `http://localhost:3000` 啟動，並與 GraphQL Server 連線。
+Client 會在 `http://localhost:5173` 啟動，並與 GraphQL Server 連線。
