@@ -11,14 +11,14 @@
 1. 啟動 RESTful API Server
 
 ```bash
-cd restful
+cd express
 ```
 
 ```bash
-bun install && bun start
+npm i && npm start
 ```
 
-Server 會在 `http://localhost:3210` 啟動，並在 RAM 中建立有假資料的 SQLite 資料庫。
+Server 會在 `http://localhost:4321` 啟動，並在 RAM 中建立有假資料的 SQLite 資料庫。
 
 2. 啟動 GraphQL Server
 
