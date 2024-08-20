@@ -2,7 +2,7 @@ import { RESTDataSource } from '@apollo/datasource-rest';
 import { VehicleModel } from '../models.js';
 
 export class VehiclesAPI extends RESTDataSource {
-  baseURL?: string = 'http://localhost:3210';
+  baseURL?: string = 'http://localhost:4321';
 
   getVehicles() {
     return this.get<VehicleModel[]>('/vehicles');

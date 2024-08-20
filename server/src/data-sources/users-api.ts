@@ -3,7 +3,7 @@ import type { UserModel } from '../models.js';
 import type { CreateUserInput } from '../generated/types.js';
 
 export class UsersAPI extends RESTDataSource {
-  baseURL?: string = 'http://localhost:3210';
+  baseURL?: string = 'http://localhost:4321';
 
   getUsers() {
     return this.get<UserModel[]>('/users');
