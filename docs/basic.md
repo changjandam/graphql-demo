@@ -1,6 +1,6 @@
 # GraphQL 學習筆記 - 概念
 
-GraphQL 是一種前端與後端的溝通框架，透過名為 Schema Definition Language(SDL)將資料定義為 **node** 與 **edge** 構築出一個串連所有資料的 **graph schema**，透過 GraphQL 提供的進入點，client 可以在這個 **graph** 中取得剛好符合我們需求的資料，從而避免 over fetching 所造成時間與流量的浪費，改善使用者體驗，另外 GraphQL 也會根據 schema 進行資料型別驗證，強化了 data fetching 時的型別安全性。
+GraphQL 是一種前端與後端的溝通框架，透過名為 Schema Definition Language(SDL)將資料定義為 **node** 與 **edge** 構築出一個串連所有資料的 **graph schema**，透過 server 給予的 GraphQL 進入點，client 可以在這個 **graph** 中取得剛好符合我們需求的資料，從而避免 over fetching 所造成時間與流量的浪費，改善使用者體驗，另外 GraphQL 也會根據 schema 進行資料型別驗證，強化了 data fetching 時的型別安全性。
 
 ## RESTful 的問題
 
